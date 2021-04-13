@@ -1,5 +1,6 @@
 - name: Setup Apache Server
   hosts: localhost
+  become: yes
   tasks:
     - name: Install Apache2 on Ubuntu
       apt:
